@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     if (existing.docs.length > 0) {
       const prev = existing.docs[0]
 
-  
+
       await payload.update({
         collection: 'branding-partials',
         id: prev.id,

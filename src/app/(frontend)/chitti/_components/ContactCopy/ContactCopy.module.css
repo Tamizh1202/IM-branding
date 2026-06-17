@@ -6,7 +6,7 @@
     background-color: #ffff;
     box-sizing: border-box;
     /* padding: clamp(80px, 12vw, 160px) clamp(24px, 12vw, 215px); */
-    padding:    80px clamp(80px, 15vw, 400px);
+    padding:    80px clamp(80px, 15vw, 350px);
     padding-bottom:0px;
 }
 
@@ -14,7 +14,8 @@
     display: flex;
     justify-content: left;
     flex-direction: row;
-    gap: clamp(40px, 15vw, 180px);
+    /* gap: clamp(40px, 15vw, 180px); */
+    gap:155px;
     width: 100%;
     max-width: 1400px;
     align-items: center;

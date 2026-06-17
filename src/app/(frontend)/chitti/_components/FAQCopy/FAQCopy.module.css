@@ -6,7 +6,7 @@
     box-sizing: border-box;
     background-color: #ffff;
     padding:
-        80px clamp(80px, 15vw, 400px) 0px;
+        80px clamp(80px, 15vw, 350px) 0px;
 }
 
 .MainContainer {
@@ -14,7 +14,7 @@
     justify-content: left;
     flex-direction: row;
     width: 100%;
-    gap: clamp(40px, 15vw, 180px);
+    gap: clamp(40px, 15vw, 150px);
 }
 
 .left {
