@@ -178,7 +178,7 @@
 }
 
 /* Mobile */
-@media (max-width: 740px) {
+@media (max-width: 640px) {
     .Parent {
         padding: 0;
     }
@@ -270,22 +270,26 @@
     }
 }
 
-@media (min-width: 741px) and (max-width: 1200px) {
+@media (min-width: 641px) and (max-width: 1200px) {
     .main {
-        padding: 40px 40px;  /* reduce from 60px */
+        padding: 40px 40px;
+        /* reduce from 60px */
     }
 
     .grid {
-        min-width: 0;        /* ← prevents grid from overflowing its container */
+        min-width: 0;
+        /* ← prevents grid from overflowing its container */
     }
 
     .cell {
         min-height: 100px;
-        min-width: 0;        /* ← same for cells */
+        min-width: 0;
+        /* ← same for cells */
     }
 
     .cell img {
-        width: 100%;         /* ← let image shrink with cell */
+        width: 100%;
+        /* ← let image shrink with cell */
         height: auto;
         max-height: 105px;
         object-fit: contain;
