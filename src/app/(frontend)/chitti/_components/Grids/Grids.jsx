@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./Grids.module.css"
 import ContactPopupCopy from "../ContactCopy/ContactPopupCopy"
 import marq1 from "./grid1.png"
-import marq2 from "./grid.png"
+import marq2 from "./grid2.png"
 import marq3 from "./grid3.png"
 import marq4 from "./grid4.png"
 import marq5 from "./grid5.png"
