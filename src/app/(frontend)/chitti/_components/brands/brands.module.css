@@ -8,7 +8,7 @@
 }
 
 .top {
-    padding: 70px 25px 70px;
+    padding: 70px 0px 70px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -28,12 +28,12 @@
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    gap: 50px;
+    gap: clamp(20px, 2vw, 45px);
 }
 
 .Logos img {
     width: auto;
-    height: 75px;
+    height: clamp(40px, 5vw, 75px);
 }
 
 .mid {
@@ -73,7 +73,8 @@
     flex-direction: row;
     width: max-content;
     margin-bottom: 20px;
-    animation: marqueeLeft 10s linear infinite;
+    animation: marqueeLeft 16s linear infinite;
+    animation-delay: -8s;
 }
 
 .MarqueeTrack img {
@@ -92,7 +93,8 @@
     display: flex;
     flex-direction: row;
     width: max-content;
-    animation: marqueeRight 12s linear infinite;
+    animation: marqueeRight 20s linear infinite;
+    animation-delay: -10s;
 }
 
 .MarqueeTrackAnti img {
@@ -105,6 +107,26 @@
 @keyframes marqueeRight {
     from { transform: translateX(-50%); }
     to   { transform: translateX(0); }
+}
+
+.LogoMarquee {
+    display: none;
+}
+
+.LogoMarqueeTrack {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    align-items: center;
+    animation: marqueeLeft 22s linear infinite;
+    animation-delay: -11s;
+}
+
+.LogoMarqueeTrack img {
+    height: 60px;
+    width: auto;
+    flex-shrink: 0;
+    margin-right: 40px;
 }
 
 .divider {
@@ -144,15 +166,17 @@
 
     .top h1 {
         font-size: 20px;
+        padding-left:25px;
     }
 
     .Logos {
-        justify-content: space-between;
-        gap: unset;
+        display: none;
     }
 
-    .Logos img {
-        height: 55px;
+    .LogoMarquee {
+        display: block;
+        overflow: hidden;
+        width: 100%;
     }
 
     .mid {
@@ -161,7 +185,7 @@
     }
 
     .Heading {
-        padding-left: 24px;
+        padding-left: 25px;
     }
 
     .heroHeading {
@@ -184,6 +208,6 @@
 }
 @media (min-width: 641px) and (max-width: 1200px) {
     .main {
-        padding: 0 clamp(24px, 7vw, 150px)  0px;
+        /* padding: 0 clamp(24px, 7vw, 150px)  0px; */
     }
 }

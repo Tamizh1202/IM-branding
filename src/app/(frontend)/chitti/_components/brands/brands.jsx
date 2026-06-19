@@ -3,7 +3,7 @@ import styles from "./brands.module.css"
 import tata from "./tata.png"
 import alhuzifa from "./alhuzifa.png"
 import titan from "./titan.png"
-import marriot from "./marriot.png"
+// import marriot from "./marriot.png"
 import marq1 from "./marqq1.png"
 import marq2 from "./marqq2.png"
 import marq3 from "./marqq3.png"
@@ -15,6 +15,15 @@ import marq8 from "./marqq8.png"
 import marq9 from "./marqq9.png"
 import marq10 from "./marqq10.png"
 
+
+import titan1 from "./titan1.png"
+import tata2 from "./tata2.png"
+import marriot from "./marriot.png"
+import prestige from "./prestige.png"
+import silverCoin from "./silverCoin.png"
+import swiggy from "./swiggy.png"
+import keshari from "./keshari.png"
+
 export default function Brand() {
     return (
         <>
@@ -25,13 +34,38 @@ export default function Brand() {
                         Trusted by 250+ brands
                     </h1>
                     <div className={styles.Logos}>
-                        <Image src={tata} alt="tata" />
+                        <Image src={titan1} alt="tata" />
                         <span className={styles.divider} />
-                        <Image src={alhuzifa} alt="alhuzifa" />
+                        <Image src={tata2} alt="alhuzifa" />
                         <span className={styles.divider} />
-                        <Image src={titan} alt="titan" />
+                        <Image src={marriot} alt="titan" />
                         <span className={styles.divider} />
-                        <Image src={marriot} alt="marriot" />
+                        <Image src={prestige} alt="marriot" />
+                        <span className={styles.divider} />
+                        <Image src={silverCoin} alt="marriot" />
+                        <span className={styles.divider} />
+                        <Image src={swiggy} alt="marriot" />
+                        <span className={styles.divider} />
+                         <Image src={keshari} alt="marriot" />
+                        {/* <span className={styles.divider} /> */}
+                    </div>
+                    <div className={styles.LogoMarquee}>
+                        <div className={styles.LogoMarqueeTrack}>
+                            <Image src={titan1} alt="titan" />
+                            <Image src={tata2} alt="tata" />
+                            <Image src={marriot} alt="marriot" />
+                            <Image src={prestige} alt="prestige" />
+                            <Image src={silverCoin} alt="silverCoin" />
+                            <Image src={swiggy} alt="swiggy" />
+                            <Image src={keshari} alt="keshari" />
+                            <Image src={titan1} alt="titan" />
+                            <Image src={tata2} alt="tata" />
+                            <Image src={marriot} alt="marriot" />
+                            <Image src={prestige} alt="prestige" />
+                            <Image src={silverCoin} alt="silverCoin" />
+                            <Image src={swiggy} alt="swiggy" />
+                            <Image src={keshari} alt="keshari" />
+                        </div>
                     </div>
                 </div>
                 <div className={styles.mid}>

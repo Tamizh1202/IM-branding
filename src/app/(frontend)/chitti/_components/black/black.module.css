@@ -174,8 +174,8 @@
 }
 
 .active {
-    border-color: rgba(255, 255, 255, 0.6);
-    background: rgba(255, 255, 255, 0.15);
+    /* border-color: rgba(255, 255, 255, 0.6); */
+    /* background: rgba(255, 255, 255, 0.15); */
 }
 
 /* Mobile */
@@ -229,7 +229,7 @@
 
     .cell img {
         width: auto;
-        height: 90px;
+        height: 110px;
     }
 
     .cell {
