@@ -67,7 +67,7 @@ gap: clamp(21px, 5vw, 69px);
   font-family: var(--font-pretendard);
 
 }
-@media (max-width:640px){
+@media (max-width: 768px) {
 
 
 .behance svg{

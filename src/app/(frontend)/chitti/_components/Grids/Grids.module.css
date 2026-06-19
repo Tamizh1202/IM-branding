@@ -127,7 +127,7 @@
     font-family: var(--font-pretendard);
 }
 
-@media (max-width: 1200px) {
+@media (min-width:769px) and (max-width: 1200px) {
     .top {
         width: auto;
     }
@@ -136,12 +136,18 @@
         flex-direction: column;
         /* align-items: center; */
         gap: 50px;
-        padding: 70px clamp(24px, 7vw, 150px) 80px;
+        padding: 0px clamp(24px, 7vw, 150px) 80px;
+    }
+    .para1{
+        width:100%;
+    }
+    .heading{
+        width:90%;
     }
 }
 
 /* Mobile */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .content {
         flex-direction: column;
         gap: 70px;
@@ -168,7 +174,7 @@
         text-align: center;
         font-size: 24px;
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
     }
 
     .para1 {

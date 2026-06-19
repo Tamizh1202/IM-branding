@@ -179,7 +179,7 @@
 }
 
 /* Mobile */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .Parent {
         padding: 0;
     }
@@ -288,7 +288,7 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        width: 100%;
+        width: 90%;
     }
 
     .heading {
@@ -305,7 +305,7 @@
     }
 }
 
-@media (min-width: 641px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
     /* .main{
         padding: 40px 40px;
     } */

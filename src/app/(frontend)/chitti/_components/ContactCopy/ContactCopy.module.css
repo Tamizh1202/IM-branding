@@ -74,8 +74,7 @@
     flex-shrink: 0;
     min-width: 24px;
     min-height: 24px;
-    position: relative;
-    top: 4px;
+    margin-top: 4px;
 }
 
 .item p {
@@ -405,7 +404,7 @@
     transform: rotate(45deg);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .main {
         padding: 80px 24px 0px;
     }
@@ -461,6 +460,7 @@
         width: 20px !important;
         height: 20px !important;
         flex-shrink: 0;
+        margin-top: 4px;
     }
 
     .formSubtitle {
@@ -529,6 +529,7 @@
 
     .item {
         gap: 6px;
+        align-items:normal;
     }
 
     .item p {
@@ -594,7 +595,7 @@
     }
 }
 
-@media (min-width: 641px) and (max-width: 900px) {
+@media (min-width: 769px) and (max-width: 900px) {
     .main {
         padding-bottom: 0px;
         padding-top: 90px;
@@ -743,7 +744,7 @@
     }
 }
 
-@media (min-width: 641px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
     .main {
         padding: 80px clamp(24px, 7vw, 150px);
     }

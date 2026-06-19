@@ -58,7 +58,7 @@ const ArrowIcon = () => (
 
 const reviews = [
   {
-    quote: '"Their creativity, attention to detail, and deep understanding of brand experience are truly exceptional."',
+    quote: '"Integra Magna\'s work was a resounding success and a perfect representation of the client\'s brand ethos. The team was creative, attentive to detail, and deeply understanding of the brand experience. Integra Magna\'s turnaround time was faster than the speed of light. The team delivered on time."',
     reviewer: 'Kunal Kumrawat',
     designation: 'Brand Head, STAGE',
     location: 'Noida, India',
@@ -67,7 +67,7 @@ const reviews = [
     rating: '4.5',
   },
   {
-    quote: '"Everything was perfect."',
+    quote: '"Integra Magna\'s work has received more than 400 leads for the client\'s services in two months. The team has delivered on time and had perfect communication with a dedicated account manager. Integra Magna is very responsive and integrates feedback easily. They\'re always excited to try new ideas."',
     reviewer: 'Prashi Sharma',
     designation: 'Chief Strategy Officer, First Response Healthcare',
     location: 'Dubai, UAE',
@@ -76,7 +76,7 @@ const reviews = [
     rating: '5.0',
   },
   {
-    quote: '"Integra Magna is a golden adjustable wrench when it comes to design communication."',
+    quote: '"Thanks to Integra Magna\'s efforts, the client has reached a million followers on their Facebook page. The team consistently delivers work on time, is easy to approach, and has a great sense of design and UX. The team\'s UX capabilities and value-driven work are hallmarks of their engagement."',
     reviewer: 'Rajshikhar Molasaria',
     designation: 'Brand Manager, Prestige Feed Mills Ltd.',
     location: 'Indore, India',
@@ -85,7 +85,7 @@ const reviews = [
     rating: '5.0',
   },
   {
-    quote: '"The team is good and understands their customers very well."',
+    quote: '"Thanks to Integra Magna\'s work, the client has seen a 30% increase in website engagement and a more cohesive brand identity. The client praises their commitment and family-like treatment. The team has a creative approach, delivers work on time, and understands the client\'s needs well."',
     reviewer: 'Aditya Sharma',
     designation: 'CEO, Serovia',
     location: 'Indore, India',
@@ -94,7 +94,7 @@ const reviews = [
     rating: '5.0',
   },
   {
-    quote: '"The quality of their work is amazing. I was wowed by the final packaging design."',
+    quote: '"IM Designs has delivered top-notch work so far. For example, the packaging they designed has attracted new customers. Throughout the engagement, they\'ve been communicative and responsive to feedback. Consequentially, the client is happy to continue their partnership."',
     reviewer: 'Shailja Lakhotia',
     designation: 'Founder & CEO, Beyond Offices',
     location: 'Guwahati, India',
@@ -103,7 +103,7 @@ const reviews = [
     rating: '5.0',
   },
   {
-    quote: '"I was impressed with their openness to ideas."',
+    quote: '"Integra Magna successfully completed the project, meeting all the client\'s expectations. The team was open and communicative, ensuring a smooth workflow. Integra Magna delivered work on time and made adjustments based on feedback. Their attention to detail and high-quality work stood out."',
     reviewer: 'Miltali Akarte',
     designation: 'Founder, Mograa Awakkenings',
     location: 'Dubai, UAE',
@@ -112,7 +112,7 @@ const reviews = [
     rating: '5.0',
   },
   {
-    quote: '"We were impressed with Integra Magna\'s idea behind the outcome."',
+    quote: '"Integra Magna delivered a logo that resembled the client\'s brand values. The team was supportive, ensured that the client didn\'t face any challenges, and provided timely deliverables throughout the engagement. Integra Magna communicated with the client through email and WhatsApp."',
     reviewer: 'Abhijeet Singh',
     designation: 'Executive, DRP Exoticfarms',
     location: 'Mhow, India',
@@ -121,7 +121,6 @@ const reviews = [
     rating: '5.0',
   },
 ];
-
 const TOTAL_CARDS = 1 + reviews.length;
 
 
