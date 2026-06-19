@@ -24,7 +24,7 @@
     }
 }
 
-.stickyOuter > * {
+.stickyOuter>* {
     pointer-events: all;
 }
 
@@ -40,16 +40,16 @@
     position: absolute;
     inset: 0;
     border-radius: 99px;
-   backdrop-filter: blur(80px) saturate(200%);
-     -webkit-backdrop-filter: blur(80px) saturate(200%);
-    -webkit-mask: 
+    backdrop-filter: blur(90px) saturate(180%);
+    -webkit-backdrop-filter: blur(90px) saturate(180%);
+    -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     padding: 9px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background:#ffffff38;
+    border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .ctaWrapper {
@@ -59,7 +59,10 @@
     align-items: center;
     padding: 7px 10px;
     border-radius: 99px;
-    background: #f0f0f0;
+    background: #ffffff;
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     width: fit-content;
     min-width: 200px;
     position: relative;
