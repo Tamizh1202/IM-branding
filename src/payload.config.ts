@@ -12,6 +12,8 @@ import { BrandingForm } from './collections/BrandingForm'
 import { BrandingPartial } from './collections/BrandingPartial'
 import { PackagingForm } from './collections/PackagingForm'
 import { PackagingPartial } from './collections/PackagingPartial'
+import { UiForm } from './collections/UiForm'
+import { UiPartial } from './collections/UiPartial'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -23,7 +25,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, BrandingForm, BrandingPartial, PackagingForm, PackagingPartial],
+  collections: [Users, Media, BrandingForm, BrandingPartial, PackagingForm, PackagingPartial, UiForm, UiPartial],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
@@ -42,6 +44,8 @@ export default buildConfig({
       { slug: 'branding-partials' },
       { slug: 'packaging-forms' },
       { slug: 'packaging-partials' },
+      { slug: 'ui-forms'},
+      { slug: 'ui-partials'},
     ],
   }),
 ],

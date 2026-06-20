@@ -90,7 +90,7 @@ const handleBlur = (e) => {
 
   // partial capture
   if (value.trim()) {
-    fetch('/api/packaging-partial', {
+    fetch('/api/ui-partial', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -136,7 +136,7 @@ const handleBlur = (e) => {
     setSubmitError('')
 
     try {
-      const res = await fetch('/api/packaging-forms', {
+      const res = await fetch('/api/ui-forms', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -149,7 +149,7 @@ const handleBlur = (e) => {
       })
    if (!res.ok) throw new Error('Submission failed')
 localStorage.removeItem('pkg_partial_session')
-router.push('/packaging/thank-you')
+router.push('/uiux/thank-you')
     } catch {
       setSubmitError('Something went wrong. Please try again.')
       setSubmitting(false)

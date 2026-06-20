@@ -79,7 +79,7 @@ const Contact = () => {
 
 
         if (value.trim()) {
-            fetch('/api/packaging-partial', {
+            fetch('/api/ui-partial', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -123,7 +123,7 @@ const Contact = () => {
         setSubmitting(true)
         setSubmitError('')
         try {
-            const res = await fetch('/api/packaging-forms', {
+            const res = await fetch('/api/ui-forms', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -136,7 +136,7 @@ const Contact = () => {
             })
             if (!res.ok) throw new Error('Submission failed')
             localStorage.removeItem('pkg_partial_session')
-            router.push('/packaging/thank-you')
+            router.push('/uiux/thank-you')
         } catch {
             setSubmitError('Something went wrong. Please try again.')
             setSubmitting(false)
@@ -174,7 +174,7 @@ const Contact = () => {
                                         </mask>
                                         <g mask="url(#mask1_c)"><path d="M0 0H24V24H0V0Z" fill="#101820" /></g>
                                     </svg>
-                                    <p>Delivered in 7-14 days, not 6 months</p>
+                                    <p>Delivered in timeline</p>
                                 </div>
                                 <div className={styles.item}>
                                     <svg className={styles.checkIcon} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,7 +184,7 @@ const Contact = () => {
                                         </mask>
                                         <g mask="url(#mask2_c)"><path d="M0 0H24V24H0V0Z" fill="#101820" /></g>
                                     </svg>
-                                    <p>One team for design, structure, and print files, no handoff chaos</p>
+                                    <p>One team for design, dev, and brand, no handoff chaos</p>
                                 </div>
                             </div>
                         </div>

@@ -73,6 +73,8 @@ export interface Config {
     'branding-partials': BrandingPartial;
     'packaging-forms': PackagingForm;
     'packaging-partials': PackagingPartial;
+    'ui-forms': UiForm;
+    'ui-partials': UiPartial;
     exports: Export;
     imports: Import;
     'payload-kv': PayloadKv;
@@ -89,6 +91,8 @@ export interface Config {
     'branding-partials': BrandingPartialsSelect<false> | BrandingPartialsSelect<true>;
     'packaging-forms': PackagingFormsSelect<false> | PackagingFormsSelect<true>;
     'packaging-partials': PackagingPartialsSelect<false> | PackagingPartialsSelect<true>;
+    'ui-forms': UiFormsSelect<false> | UiFormsSelect<true>;
+    'ui-partials': UiPartialsSelect<false> | UiPartialsSelect<true>;
     exports: ExportsSelect<false> | ExportsSelect<true>;
     imports: ImportsSelect<false> | ImportsSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
@@ -238,6 +242,41 @@ export interface PackagingForm {
  * via the `definition` "packaging-partials".
  */
 export interface PackagingPartial {
+  id: number;
+  sessionId?: string | null;
+  fullName?: string | null;
+  company?: string | null;
+  email?: string | null;
+  phone?: string | null;
+  message?: string | null;
+  /**
+   * Which field they filled last before leaving
+   */
+  lastField?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ui-forms".
+ */
+export interface UiForm {
+  id: number;
+  fullName: string;
+  company?: string | null;
+  email: string;
+  phone?: string | null;
+  message?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Users who started filling the UI/UX form but did not submit.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ui-partials".
+ */
+export interface UiPartial {
   id: number;
   sessionId?: string | null;
   fullName?: string | null;
@@ -465,6 +504,14 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'packaging-partials';
         value: number | PackagingPartial;
+      } | null)
+    | ({
+        relationTo: 'ui-forms';
+        value: number | UiForm;
+      } | null)
+    | ({
+        relationTo: 'ui-partials';
+        value: number | UiPartial;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -594,6 +641,34 @@ export interface PackagingFormsSelect<T extends boolean = true> {
  * via the `definition` "packaging-partials_select".
  */
 export interface PackagingPartialsSelect<T extends boolean = true> {
+  sessionId?: T;
+  fullName?: T;
+  company?: T;
+  email?: T;
+  phone?: T;
+  message?: T;
+  lastField?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ui-forms_select".
+ */
+export interface UiFormsSelect<T extends boolean = true> {
+  fullName?: T;
+  company?: T;
+  email?: T;
+  phone?: T;
+  message?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ui-partials_select".
+ */
+export interface UiPartialsSelect<T extends boolean = true> {
   sessionId?: T;
   fullName?: T;
   company?: T;
@@ -759,6 +834,8 @@ export interface TaskCreateCollectionExport {
       | 'branding-partials'
       | 'packaging-forms'
       | 'packaging-partials'
+      | 'ui-forms'
+      | 'ui-partials'
       | 'exports'
       | 'imports';
     drafts?: ('yes' | 'no') | null;
