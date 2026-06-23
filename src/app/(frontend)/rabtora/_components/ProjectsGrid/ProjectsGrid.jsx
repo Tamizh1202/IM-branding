@@ -91,7 +91,6 @@ const projects = [
   },
 ];
 
-
 const ProjectsGrid = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [cursorVisible, setCursorVisible] = useState(false);
