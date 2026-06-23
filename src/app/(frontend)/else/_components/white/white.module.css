@@ -77,7 +77,7 @@
     /* max-width: 1109px;
     width: 100%; */
     padding: 40px 30px;
-    background: radial-gradient(circle at 36% -492%, #000 37%, #060102 71%, #9f7200 100%);
+    background: radial-gradient(circle at 15% 5%, #000 0%, #060102 50%, #1E663D 110%);
     color: #fff;
 }
 
@@ -161,7 +161,6 @@
         align-items: center;
         /* max-width: 360px; */
         width: unset;
-        background:radial-gradient(circle at 36% 6%, #000 55%, #060102 50%, #ffb600 110%);
     }
 
     .toptop {

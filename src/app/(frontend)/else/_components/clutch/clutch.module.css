@@ -8,11 +8,10 @@
     position: relative;
     z-index: 1;
     padding: 80px clamp(80px, 15vw, 350px);
+    padding-bottom:0px;
+    padding-top:0px;
     user-select: none;
     -webkit-user-select: none;
-    padding-bottom:0px;
-    padding-top:0px;    
-        
 }
 
 .MainConatiner {
@@ -103,11 +102,11 @@
 
 
 .diffcard {
-    background-color: #241500;
-    border: 1px solid #241500;
+    background-color: #101820;
+    border: 1px solid #101820;
     border-radius: 10px;
     padding: 30px;
-    /* box-shadow: 0 0 60px rgba(0, 0, 0, 0.25); */
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -524,7 +523,7 @@
     }
 
     .ctatoclutch span:first-child {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .reviewsCount {

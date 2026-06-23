@@ -10,29 +10,29 @@ export default function White() {
             <div className={styles.main}>
                 <div className={styles.content}>
                     <div className={styles.top1}>
-                        <h1 className={styles.heading01}>How we work? </h1>
-                        <h2 className={styles.heading02}>Three simple steps.</h2>
+                        <h1 className={styles.heading01}>How it works ? </h1>
+                        <h2 className={styles.heading02}>3 simple steps.</h2>
                     </div>
                     <div className={styles.bottom}>
                         <div className={styles.row}>
                             <div className={styles.num}>1</div>
                             <div className={styles.text}>
-                                Free Consultation. <br />
-                                 Share your product, your users, and where you're losing them we'll tell you exactly what needs to change.
+                                Free call. <br />
+                                 Tell us about your product, your users, and where you're losing them. We'll tell you exactly what needs to change.
                             </div>
                         </div>
                         <div className={styles.row}>
                             <div className={styles.num}>2</div>
                             <div className={styles.text}>
-                               Design & Review.<br />
-                                We design, you review starting with wireframes, then high-fidelity screens. We refine until every screen is right.
+                                Design & review. <br />
+                                We design. You see wireframes, then high-fidelity screens. We revise until every screen feels right.
                             </div>
                         </div>
                         <div className={styles.row}>
                             <div className={styles.num}>3</div>
                             <div className={styles.text}>
-                                Files Delivered.<br />
-                                  Development-ready Figma files, complete with components, specifications, and a clickable prototype delivered straight to your inbox.
+                                Files delivered. <br />
+                                Dev-ready Figma files with components, specs, and a clickable prototype - in your inbox.
                             </div>
                         </div>
 
@@ -42,7 +42,7 @@ export default function White() {
                 <div className={styles.top}>
                     <div className={styles.toptop}>
                         <h1 className={styles.heading}>You've seen how it works. Now <span className={styles.italicText}>let's make it work for you.</span></h1>
-                        <p className={styles.para1}>One free consultation is all it takes. Tell us about your product, and we'll show you precisely where your UX is costing you customers.</p>
+                        <p className={styles.para1}>One free call is all it takes. Tell us about your product and we'll show you exactly where your UX is costing you customers.</p>
                     </div>
                     <div className={styles.topbottom}>
                         <div className={styles.Quote} onClick={() => setIsOpen(true)} style={{ cursor: 'pointer' }}>

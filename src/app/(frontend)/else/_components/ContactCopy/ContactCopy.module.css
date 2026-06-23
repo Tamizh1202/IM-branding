@@ -50,7 +50,7 @@
 .actually {
     font-size: 34px;
     font-weight: 400;
-    color: #D78B00;
+    color: #fa7598;
     margin: 0;
     font-family: var(--font-awesome-serif);
 }
@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    align-items: flex-start;
+    align-items: baseline;
 }
 
 .checkIcon {
@@ -225,7 +225,7 @@
     -webkit-backdrop-filter: blur(10px);
     padding: clamp(30px, 5vw, 63px) clamp(24px, 5vw, 88px) clamp(30px, 4vw, 50px) clamp(24px, 5vw, 88px);
     background-image:
-        radial-gradient(ellipse at top right, rgba(201, 154, 42, 0.12) 0%, transparent 60%),
+        radial-gradient(ellipse at top right, rgba(250, 117, 152, 0.12) 0%, transparent 60%),
         radial-gradient(ellipse at bottom left, rgba(255, 255, 255, 0.6) 0%, transparent 60%);
     display: flex;
     flex-direction: column;
@@ -491,7 +491,7 @@
 
     .leftOne {
         gap: 30px;
-        padding-top: 0px;
+        padding-top:0px;
     }
 
     .lefttwoTopleft img {
@@ -528,8 +528,8 @@
     }
 
     .item {
-        gap: 12px;
-        align-items: normal;
+        gap: 6px;
+        align-items:normal;
     }
 
     .item p {
@@ -658,7 +658,7 @@
 
     .leftOne {
         gap: 30px;
-
+        
     }
 
     .lefttwoTopleft img {

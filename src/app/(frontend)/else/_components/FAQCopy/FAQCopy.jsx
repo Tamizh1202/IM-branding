@@ -81,9 +81,9 @@ const FAQS = () => {
         <div className={styles.left}>
           <h4>
             Everything you want to know <br />
-            before saying <span className={styles.lets}>yes.</span>
+            before saying <span className={styles.lets}>let's go.</span>
           </h4>
-          <p>If anything's still unclear, book a free 30-minute call we'll answer your questions directly, no sales pitch involved</p>
+          <p>If something's still unclear after reading, just book a free call we'll answer anything in 30 minutes, no pitch involved.</p>
         </div>
         <div className={styles.right}>
           {faqs.map((faq, index) => (

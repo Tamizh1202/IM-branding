@@ -19,7 +19,7 @@ export default function Packaging() {
                                 </span>
                             </h1>
                             <p className={styles.para1}>
-                               A cluttered layout, a slow-loading page, a call-to-action buried below the fold, each one quietly costs you customers, every single day. Exceptional UI/UX does more than look good. It builds instant credibility, removes friction, and turns first-time visitors into long-term customers.
+                                A confusing layout, a slow load, a CTA buried below the fold each one silently costs you customers every single day. Great UI/UX doesn't just look good. It builds instant trust, removes friction, and turns first-time visitors into paying customers.
                             </p>
                         </div>
                         <div className={styles.topbottom}>
@@ -37,41 +37,41 @@ export default function Packaging() {
                         </div>
                     </div>
                     <div className={styles.bottom}>
-                        <h1 className={styles.Choose} style={{ fontFamily: "var(--font-awesome-serif)", fontSize: "28px" }}>Why UAE businesses choose us ?</h1>
+                        <h1 className={styles.Choose} style={{ fontFamily: "var(--font-awesome-serif)", fontSize: "28px" }}>Why choose us ? </h1>
                         <h1 className={styles.ul}>Designed to convert. Built to last.</h1>
                         <div className={styles.uls}>
                             <div className={styles.ul}>
-                                <svg className={styles.dot} width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" fill="#EFE5C3" />
-                                    <circle cx="8" cy="8" r="4" fill="#C99A2A" />
+                                <svg className={styles.dot} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
+                                    <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
-                                <h1>Strategy-led design, not just visual polish</h1>
+                                <h1>Strategy-first, not just pretty screens </h1>
                             </div>
                             <div className={styles.ul}>
                                 <svg className={styles.dot} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" fill="#EFE5C3" />
-                                    <circle cx="8" cy="8" r="4" fill="#C99A2A" />
+                                    <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
+                                    <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
-                                <h1>Remote-first collaboration, aligned with GCC working hours</h1>
+                                <h1>Remote-first, timezone-friendly collaboration</h1>
                             </div>
                             <div className={styles.ul}>
                                 <svg className={styles.dot} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" fill="#EFE5C3" />
-                                    <circle cx="8" cy="8" r="4" fill="#C99A2A" />
+                                    <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
+                                    <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
-                                <h1>Development-ready files, every time</h1>
+                                <h1>Dev-ready files, every time</h1>
                             </div>
                             <div className={styles.ul}>
                                 <svg className={styles.dot} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" fill="#EFE5C3" />
-                                    <circle cx="8" cy="8" r="4" fill="#C99A2A" />
+                                    <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
+                                    <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
                                 <h1>One team. One process. </h1>
                             </div>
                             <div className={styles.ul}>
                                 <svg className={styles.dot} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="8" cy="8" r="8" fill="#EFE5C3" />
-                                    <circle cx="8" cy="8" r="4" fill="#C99A2A" />
+                                    <circle cx="8" cy="8" r="8" fill="#FFD4DF" />
+                                    <circle cx="8" cy="8" r="4" fill="#FA7598" />
                                 </svg>
                                 <h1>Honest advice, better outcomes</h1>
                             </div>

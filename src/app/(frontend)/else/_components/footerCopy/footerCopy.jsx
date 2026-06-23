@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
           <div className={styles.bottom}>
             <h4>Privacy Policy</h4>
-            <p>Copyright © 2026 Rabtora</p>
+            <p>Copyright © 2026 Integra Magna</p>
           </div>
         </div>
       </div>

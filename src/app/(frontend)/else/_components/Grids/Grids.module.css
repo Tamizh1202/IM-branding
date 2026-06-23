@@ -24,15 +24,16 @@
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
 }
 
-/* hidden on desktop — needs higher specificity than .mainContainer img */
-.mainContainer .mobileLong,
-.mainContainer .mobileOnly {
-    display: none;
-}
+.mainContainer > :nth-child(1) { grid-column: span 2; }
+.mainContainer > :nth-child(2) { grid-column: span 1; }
+.mainContainer > :nth-child(3) { grid-column: span 1; }
+.mainContainer > :nth-child(4) { grid-column: span 1; }
+.mainContainer > :nth-child(5) { grid-column: span 1; }
+.mainContainer > :nth-child(6) { grid-column: span 2; }
 
 .top {
     display: flex;
@@ -43,7 +44,10 @@
     gap: 25px;
     /* width:1109px; */
     padding: 40px 30px;
-    background: radial-gradient(circle at 36% -492%, #000 37%, #060102 71%, #9f7200 100%);
+    background: radial-gradient(circle at 15% 5%,
+            #000000 0%,
+            #060102 50%,
+            #9F7200 110%);
     color: #fff;
     /* width: 320px; */
     flex-shrink: 0;
@@ -132,7 +136,6 @@
     .top {
         width: auto;
     }
-
     .content {
         display: flex;
         flex-direction: column;
@@ -140,13 +143,11 @@
         gap: 50px;
         padding: 0px clamp(24px, 7vw, 150px) 80px;
     }
-
-    .para1 {
-        width: 100%;
+    .para1{
+        width:100%;
     }
-
-    .heading {
-        width: 90%;
+    .heading{
+        width:90%;
     }
 }
 
@@ -157,36 +158,16 @@
         gap: 70px;
         padding: 70px 24px 70px;
     }
-
     .mainContainer {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
     }
-
-    .mainContainer img {
-        object-fit: contain;
-    }
-
-    /* row 1: long.png full width */
-    .mainContainer .mobileLong {
-        display: block;
-        grid-column: span 2;
-    }
-
-    /* reveal img9, img10 for row 6 */
-    .mainContainer .mobileOnly {
-        display: block;
-        grid-column: span 1;
-    }
-
     .top {
         width: auto;
         flex-shrink: unset;
         flex-direction: column;
         align-items: center;
-        background: radial-gradient(circle at 42% -24%, #000 65%, #060102 50%, #ffb600 110%);
     }
-
     .toptop {
         align-items: unset;
     }
@@ -221,8 +202,7 @@
         width: 29px;
         height: 29px;
     }
-
-    .txt0 {
-        font-size: 18px;
+    .txt0{
+        font-size:18px;
     }
 }

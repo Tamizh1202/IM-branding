@@ -151,8 +151,8 @@ const Contact = () => {
                         <div className={styles.leftOne}>
                             <div className={styles.leftOneTop}>
                                 <h3>
-                                    Ready to 
-                                    <span className={styles.actually}> stand apart?</span>
+                                    Ready to<br />
+                                    <span className={styles.actually}>stop blending in?</span>
                                 </h3>
                             </div>
                             <div className={styles.list}>
@@ -164,7 +164,7 @@ const Contact = () => {
                                         </mask>
                                         <g mask="url(#mask0_c)"><path d="M0 0H24V24H0V0Z" fill="#101820" /></g>
                                     </svg>
-                                    <p>Strategy-led design, not just visual appeal</p>
+                                    <p>Strategy-first design, not just pretty visuals</p>
                                 </div>
                                 <div className={styles.item}>
                                     <svg className={styles.checkIcon} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -174,7 +174,7 @@ const Contact = () => {
                                         </mask>
                                         <g mask="url(#mask1_c)"><path d="M0 0H24V24H0V0Z" fill="#101820" /></g>
                                     </svg>
-                                    <p>Delivered on schedule, every time</p>
+                                    <p>Delivered in timeline</p>
                                 </div>
                                 <div className={styles.item}>
                                     <svg className={styles.checkIcon} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,11 +184,11 @@ const Contact = () => {
                                         </mask>
                                         <g mask="url(#mask2_c)"><path d="M0 0H24V24H0V0Z" fill="#101820" /></g>
                                     </svg>
-                                    <p>One team for design, development, and brand - no handoff chaos</p>
+                                    <p>One team for design, dev, and brand, no handoff chaos</p>
                                 </div>
                             </div>
                         </div>
-                        {/* <div className={styles.line}></div>
+                        <div className={styles.line}></div>
                         <div className={styles.lefttwo}>
                             <div className={styles.lefttwoTop}>
                                 <div className={styles.lefttwoTopleft}>
@@ -210,14 +210,14 @@ const Contact = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                     <div className={styles.rightWrapper}>
 
 
                         <div className={styles.formHeadingMobile}>
                             <h2 className={styles.formTitle}>
-                                Tell us what you’re building, <br /> <span className={styles.formSubtitle}> we’ll take it further.</span>
+                                Tell us what you’re building <br /> <span className={styles.formSubtitle}> we’ll take it further.</span>
                             </h2>
                             <p>No pitch. No agency jargon. Just honest brand advice.</p>
                         </div>
@@ -226,7 +226,7 @@ const Contact = () => {
 
                             <div className={styles.formHeadingDesktop}>
                                 <h2 className={styles.formTitle}>
-                                    Tell us what you’re building,<br />
+                                    Tell us what you’re building<br />
                                     <span className={styles.formSubtitle}> we’ll take it further.</span>
                                 </h2>
                                 <p>No pitch. No agency jargon. Just honest brand advice.</p>
