@@ -24,28 +24,14 @@
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
 }
 
-.mainContainer> :nth-child(1) {
-    grid-column: span 1;
-}
-
-.mainContainer> :nth-child(2) {
-    grid-column: span 1;
-}
-
-.mainContainer> :nth-child(3) {
-    grid-column: span 1;
-}
-
-.mainContainer> :nth-child(4) {
-    grid-column: span 1;
-}
-
-.mainContainer> :nth-child(5) {
-    grid-column: span 4;
+/* hidden on desktop — needs higher specificity than .mainContainer img */
+.mainContainer .mobileLong,
+.mainContainer .mobileOnly {
+    display: none;
 }
 
 .top {
@@ -177,8 +163,20 @@
         width: 100%;
     }
 
-    .mainContainer> :nth-child(5) {
+    .mainContainer img {
+        object-fit: contain;
+    }
+
+    /* row 1: long.png full width */
+    .mainContainer .mobileLong {
+        display: block;
         grid-column: span 2;
+    }
+
+    /* reveal img9, img10 for row 6 */
+    .mainContainer .mobileOnly {
+        display: block;
+        grid-column: span 1;
     }
 
     .top {
